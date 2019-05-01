@@ -11,6 +11,7 @@ h1, h2, h3, p {
 }
 
 body {
+    display: block;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -34,8 +35,8 @@ body {
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
-    }
-    &__item {
-        margin-left: 15px;
-    }
+        &__item {
+            margin-left: 15px;
+        }
+    }  
 }
