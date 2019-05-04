@@ -14,9 +14,7 @@ h1, h2, h3, p {
 }
 
 body {
-    display: block;
-    font-family: 'Roboto Slab', serif;
-    
+    font-family: 'Roboto Slab', serif; 
 }
 
 .page-main {
@@ -72,7 +70,7 @@ body {
 }
 
 .block-text {
-    flex-basis: calc(93% - 400px);
+    flex-basis: calc(93% - 500px);
     &__title {
         font-size: 48px;
         font-weight: 700;
@@ -112,6 +110,10 @@ body {
         letter-spacing: 0.7px;
         margin-bottom: 19px;
     }
+        small {
+            font-family: 'Open Sans', cursive;
+            font-style: italic;
+        }
 }
 
 .block-book {
@@ -127,6 +129,7 @@ body {
     }
 }
 
-.page-second {
-    background-color: #fff;
+/*PAGE SECOND*/
+.page-main {
+    margin-bottom: 160px;
 }
