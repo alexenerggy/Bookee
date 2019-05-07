@@ -135,12 +135,14 @@ body {
 
 /*PAGE SECOND*/
 .page-second {
+    max-width: 1170px;
+    margin: 0 auto;
     padding-top: 161px;
 }
 
 .block-author {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 20px;
 }
 
