@@ -222,15 +222,39 @@ body {
             margin-bottom: 20px;
             letter-spacing: 1.2px;
         }
-        p {
+        &__discription {
             font-family: 'Open Sans', serif;
             letter-spacing: 0.6;
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        margin-top: 14px;
+        &__title {
+            font-family: 'Roboto Slab', serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.9px;
+        }
+        &__list {
+            list-style-type: none;
+            padding-left: 23px;
+            &>li {
+                display: inline-block;
+                font-size: 18px;
+                vertical-align: middle;
+                margin-right: 12px;
+                &>a {
+                    color: $accent-color;
+                }
+            }
         }
     }
     &-table {
         flex-basis: 49%;
         &__list {
-            margin: 20px 0;
+            margin: 20px 0 0;
             padding: 0;
             counter-reset: list;
             column-count: 2;
@@ -252,7 +276,7 @@ body {
                     line-height: 22px;
                     left: 0;
                     top: 1px;
-                    background-color: $accent-color;
+                    background-color: #5fc9b4;
                     color: $light-color;
                     padding: 0px 7px;
                 }
