@@ -230,7 +230,7 @@ body {
     &-table {
         flex-basis: 49%;
         &__list {
-            margin: 0;
+            margin: 20px 0;
             padding: 0;
             counter-reset: list;
             column-count: 2;
@@ -260,13 +260,14 @@ body {
         }
         &__btn {
             background-color: $accent-color;
-            text-color: $light-color;
-            text-decoration: none;
-            max-width: 135px;
+            color: $light-color;
+            min-width: 135px;
+            min-height: 50px;
+            border: none;
             border-radius: 3px;
             text-align: center;
             margin-top: 48px;
-            padding: 14px 0;
+            padding: 14px;
             letter-spacing: 0.7px;
             margin-bottom: 19px;
         }
