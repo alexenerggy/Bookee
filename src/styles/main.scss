@@ -93,13 +93,13 @@ body {
         font-family: 'Open Sans', serif;
         font-size: 18px;
         letter-spacing: 0.7px;
-        margin-bottom: 30px;
+        margin-bottom: 43px;
     }
         span {
             display: block;
             color: $accent-color;
             font-size: 18px;
-            margin-top: 9px;
+            margin-top: 23px;
             letter-spacing: 0.9px;
         }
     }
@@ -134,11 +134,37 @@ body {
     justify-content: space-between;
     &-demo {
         display: block;
+        position: relative;
         width: 447px;
         height: 643px;
         background-image: url(../img/book.svg);
         background-repeat: no-repeat;
         flex-basis: 447px;
+        &__title {
+            font-size: 36px;
+            text-transform: uppercase;
+            position: absolute;
+            left: 131px;
+            top: 118px;
+            span {
+                display: block;
+                font-family: 'Open Sans', cursive;
+                font-size: 14px;
+                color: $accent-color;
+                text-transform: initial;
+                margin-top: 17px;
+                text-align: center;
+            }
+        }
+        &__author {
+            font-family: 'Open Sans', cursive;
+            font-size: 14px;
+            position: absolute;
+            letter-spacing: 0.7px;
+            bottom: 52px;
+            left: 87px;
+            color: $accent-color;
+        }
     }
 }
 
@@ -295,5 +321,100 @@ body {
             letter-spacing: 0.7px;
             margin-bottom: 19px;
         }
+    }
+}
+
+.page-fourth {
+    padding-top: 161px;
+    padding-bottom: 160px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.other-books {
+    &__title {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    &__text {
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0.9px;
+        color: $accent-color;
+    }
+}
+.three-books {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    &__block {
+        display: block;
+        width: 269px;
+        height: 409px;
+        position: relative;
+        background-image: url(../img/small-book.svg);
+        background-repeat: no-repeat;
+        flex-basis: 269px;
+        z-index: -1;
+        margin-top: 90px;
+        &__title {
+            color: $light-color;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 75px 0 25px;
+            span {
+                display: block;
+                font-family: 'Open Sans', cursive;
+                font-size: 14px;
+                font-weight: 500;
+                color: $accent-color;
+                text-transform: initial;
+            }
+        }
+        &__name {
+            font-family: 'Open Sans', cursive;
+            font-size: 14px;
+            position: absolute;
+            letter-spacing: 0.7px;
+            bottom: 34px;
+            left: 65px;
+            color: $accent-color;
+        }
+    }
+    &__btn {
+        position: absolute;
+        display: block;
+        text-align: center;
+    }
+}
+.three-books-main {
+    display: flex;
+    justify-content: space-around;
+}
+.three-books-text {
+    &__title {
+        margin-top: 38px;
+        text-align: center;
+        font-weight: 700;
+    }
+    &__desc {
+        margin-top: 31px;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        font-family: 'Open Sans', cursive;
+    }
+    &__link {
+        display: block;
+        margin-top: 30px;
+        text-decoration: none;
+        text-align: center;
+        color: $accent-color;
+        font-size: 15px;
+        font-weight: 700;
     }
 }
