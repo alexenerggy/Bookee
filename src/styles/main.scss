@@ -383,11 +383,6 @@ body {
             color: $accent-color;
         }
     }
-    &__btn {
-        position: absolute;
-        display: block;
-        text-align: center;
-    }
 }
 .three-books-main {
     display: flex;
@@ -416,5 +411,23 @@ body {
         color: $accent-color;
         font-size: 15px;
         font-weight: 700;
+    }
+}
+.three-books-block {
+    display: flex;
+    margin-top: 90px;
+    &__btn {
+        font-size: 18px;
+        font-style: 500;
+        letter-spacing: 0.7px;
+        align-items: center;
+        justify-content: center;
+        background-color: $accent-color;
+        color: $light-color;
+        min-width: 220px;
+        min-height: 50px;
+        border: none;
+        border-radius: 3px;
+        text-align: center;
     }
 }
