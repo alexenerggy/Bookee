@@ -505,13 +505,43 @@ body {
 .block-blog {
     display: flex;
     justify-content: space-between;
+    margin-top: 90px;
     h4 {
+        margin: 20px 0 5px;
         font-size: 18px;
+        font-family: 'Roboto Slab', serif;
+    }
+    &-item {
+        padding: 0 15px;
+        &__desc {
+            font-family: 'Open Sans', serif;
+            font-size: 15px;
+        }
+        p {
+            font-family: 'Open Sans', serif;
+            display: inline-block;
+            letter-spacing: 0.75px;
+        }
+    }
+    &-img {
+        width: 369px;
+        height: 224px;
+
     }
     &-info {
         font-size: 15px;
+        margin-bottom: 10px;
+        a {
+            text-decoration: none;
+            color: $accent-color;
+        }
+    }
+    &__desc {
+        font-size: 15px;
+        font-family: 'Open Sans', serif;
     }
 }
+
 .page__btn {
     background: linear-gradient(to top left,#65e49c, #65e4b0 );
     display: block;
@@ -524,13 +554,11 @@ body {
     background-color: $accent-color;
     color: $light-color;
     max-width: 220px;
-    min-height: 50px;
+    max-height: 50px;
+    padding: 20px;
     text-decoration: none;
     border: none;
     border-radius: 3px;
     text-align: center;
-    padding: 0;
     box-shadow: 0 -2px #b2f1be inset;
 }
-
-/* Остановка: Урок 14 Время 15-41*/
