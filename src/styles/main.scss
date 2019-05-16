@@ -9,6 +9,7 @@ $light-color: #fff;
 $accent-color: #65e496;
 $bg-light-color: #f5f6fa;
 $bg-dark-color: #44444f;
+$gray-color: #9191b5;
 
 h1, h2, h3, h4, p {
     padding: 0;
@@ -561,4 +562,65 @@ body {
     border-radius: 3px;
     text-align: center;
     box-shadow: 0 -2px #b2f1be inset;
+}
+
+.page-six {
+    padding-top: 161px;
+    padding-bottom: 160px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.block-letter {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        flex-basis: 49%;
+    }
+    &__input {
+        width: 100%;
+        background-color: $bg-dark-color;
+        border: none;
+        color: $gray-color;
+        padding: 15px 27px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        letter-spacing: 0.6px;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: $gray-color;
+        }
+    }
+    &__btn {
+        display: block;
+        background: linear-gradient(to top left,#65e49c, #65e4b0 );
+        color: $light-color;
+        text-decoration: none;
+        width: 100%;
+        font-size: 18px;
+        border-radius: 3px;
+        text-align: center;
+        border: none;
+        margin-top: 21px;
+        padding: 11px 0 15px 0;
+        letter-spacing: 0.7px;
+        margin-bottom: 19px;
+        box-shadow: 0 -2px #b2f1be inset;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__title {
+        font-size: 48px;
+        margin-bottom: 23px;
+        letter-spacing: 1.9px;
+        margin-top: 8px;
+    }
+    &__text {
+        font-family: 'Open Sans', serif;
+        font-size: 15px;
+        letter-spacing: 0.75px;
+    }
+        
 }
