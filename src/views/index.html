@@ -19,6 +19,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:100,400,400i,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<link rel="stylesheet" href="/styles/main.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	</head>
 	<body>
 		<div class="page-main">
@@ -171,6 +172,28 @@
 				<button class="three-books-block__btn">Browse all books</button>
 			</div>
 		</div>
+		<div class="page-review">
+			<div class="wrap">
+				<div class="block-carousel">
+					<div>
+						<h3>Kate Dennings</h3>
+						<p>Calligraphy Expert</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					</div>
+					<div>
+						<h3>Kate Dennings</h3>
+						<p>Calligraphy Expert</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					</div>
+					<div>
+						<h3>Kate Dennings</h3>
+						<p>Calligraphy Expert</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 		<div class="page-fifth">
 			<div class="wrap">
 				<div class="block-author">
@@ -287,5 +310,15 @@
 			</div>
 		</div>
 		<script src="/js/main.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			$('.block-carousel').slick({
+				dots: true,
+				arrows: false,
+			});
+			});
+		</script>
 	</body>
 </html>
